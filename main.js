@@ -36,9 +36,6 @@ function login(){
       });
 }
 
-function logout(){
-  
-}
 
 function send_verification(){
   var user = firebase.auth().currentUser;
