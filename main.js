@@ -36,8 +36,11 @@ function login(){
       });
 }
 
+function logout(){
+  firebase.auth().signOut();
+}
 
-function send_verification(){
+function sendVerification(){
   var user = firebase.auth().currentUser;
 
   user.sendEmailVerification().then(function() {
@@ -47,5 +50,5 @@ function send_verification(){
     // An error happened.
     window.alert("error")
   });
-  
+
 }
