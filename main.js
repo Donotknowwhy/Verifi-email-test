@@ -47,4 +47,5 @@ function send_verification(){
     // An error happened.
     window.alert("error")
   });
+  
 }
