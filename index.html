@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify email</title>
+    
+    
+</head>
+<body>
+  <div id="login_div">
+    <input type="email" placeholder="email..." id="email-field" />
+    <input type="password" placeholder="password..." id="password-field" />
+
+    <button onclick="login()">Login to account</button>
+    <button>Create a new Account</button>
+  </div>
+
+  <div id="user_div" >
+    <h3></h3>
+    <p id="user-para"></p>
+    <button onclick="logout()">Logout</button>
+    <button onclick="send_verification()">Send verification</button>
+  </div>
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  
+  <script>
+    const firebaseConfig = {
+          apiKey: "AIzaSyDtlyqZ9uh8wGKBRp138GtpSakjaes213Y",
+          authDomain: "testing-project-291f4.firebaseapp.com",
+          databaseURL: "https://testing-project-291f4.firebaseio.com",
+          projectId: "testing-project-291f4",
+          storageBucket: "testing-project-291f4.appspot.com",
+          messagingSenderId: "136677426168",
+          appId: "1:136677426168:web:5c8cb65c34aa4db24e8c0d",
+          measurementId: "G-FTQFCWZE3Z"
+        };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
